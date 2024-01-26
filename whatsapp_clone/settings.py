@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'channels',
+    'compressor',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -143,5 +144,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     # 'content/static',
 ]
+COMPRESS_ENABLED = True
+COMPRESS_OFFLINE = True
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn")
